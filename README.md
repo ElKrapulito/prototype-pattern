@@ -1,5 +1,5 @@
-#Prototype
-###A small example of the prototype design pattern
+# Prototype
+### A small example of the prototype design pattern
 * Run ```$ npm install``` to install project dependencies.
 * Run ```$ npm start``` to run example.
 
