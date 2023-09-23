@@ -1,3 +1,4 @@
+import { IPrototype } from "../interface/iprototype.interface";
 import { BaseEntity } from "./base-entity";
 
 export class Hero extends BaseEntity {
@@ -8,5 +9,9 @@ export class Hero extends BaseEntity {
 
   public salute(): void {
     console.log(`Hello! My name is ${this.name}`);
+  }
+
+  clone(): IPrototype {
+    return new Hero(this.name, this.attackDamage);
   }
 }

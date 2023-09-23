@@ -1,4 +1,6 @@
-export abstract class BaseEntity {
+import { IPrototype } from "../interface/iprototype.interface";
+
+export abstract class BaseEntity implements IPrototype {
   name: string;
   attackDamage: number = 1;
   health: number = 100;
@@ -15,4 +17,6 @@ export abstract class BaseEntity {
     console.log(`${entity.health} of health is left in ${entity.name}`);
     console.log("\n-------------------------------------");
   }
+
+  abstract clone(): IPrototype;
 }
